@@ -75,7 +75,6 @@ export default function About() {
                     </div>
                     <div className={`mb-[10vh] flex flex-col justify-between px-3 pt-16 w-[28vw] h-[90vh] text-[25px]`}>
                         {contents[3][items.contentsChosen]}
-                        <p>Hi{items.contentsChosen}</p>
                         <SmallPhotoWrapper>
                             <Image src={contents[0][items.contentsChosen][3]}
                                 layout="fill"
@@ -84,7 +83,7 @@ export default function About() {
                     </div>
                 </div>
             </div>
-        </Navbar >
+        </Navbar>
     )
 }
 
