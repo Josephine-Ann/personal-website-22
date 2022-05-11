@@ -11,7 +11,13 @@ import BackgroundNine from "../styles/images/background-9.jpg"
 import BackgroundTen from "../styles/images/background-10.jpg"
 import BackgroundEleven from "../styles/images/background-11.jpg"
 import BackgroundTwelve from "../styles/images/background-12.jpg"
+import Algorithm from "../styles/images/algorithm.svg"
+import Metrics from "../styles/images/metrics.svg"
+import LinkedIn from "../styles/images/linked_in.svg"
+import Stethoscope from "../styles/images/stethoscope.svg"
+import Magic from "../styles/images/magic.svg"
 import { useContext, useState } from "react";
+
 
 export const ThemeContext = createContext()
 export const useThemes = () => {
@@ -44,56 +50,44 @@ export const ThemeProvider = ({ children }) => {
             "I knew that algorithms were important to the job acquisition process, and I wasn’t prepared to take a hard stance on the whole thing. That’s why you can find a Github repo of my best attempts at solving algorithms here. I actually quite enjoyed them, especially after doing Colt Steele’s course on JS algorithms. "]
     ]
 
+    const imagesProjectsPage = [
+        Magic, Algorithm, Stethoscope, Metrics, LinkedIn
+    ]
+
+    const carouselClasses = ["image-fade-in", "image-fade-in-2", "image-fade-in-3", "image-fade-in-4"]
 
     const [items, setItems] = useState({
-        changeInMotion: false,
+        inMotion: 0,
+        randomNumber: 0,
+        changeInMotion: 0,
         contentsChosen: 0,
         scrollClass: 0,
-        photo: false
+        photo: false,
+        carouselClass: 0,
+        imageProjectsChoice: 0
     })
     const handleSetState = async (key, value) => {
         setItems({
             ...items,
             [key]: value
         })
-        // console.log(items)
     }
-    const handleScrollBottom = () => {
-        if (!items.changeInMotion) {
-            handleSetState("changeInMotion", true)
-            let oldValue;
-            if (items.contentsChosen === 0) {
-                oldValue = 1
-            } else if (items.contentsChosen === 1) {
-                oldValue = 2
-            } else {
-                oldValue = 0
-            }
-            handleSetState("contentsChosen", oldValue)
-            setTimeout(function () {
-                handleSetState("changeInMotion", false)
-            }, 1500)
-        } else {
-            false
-        }
+    const handleMultipleStateChanges = async (arrKeysValues) => {
+        arrKeysValues.forEach(element => {
+            handleSetState(element.key, element.value)
+        });
+        console.log(items)
     }
-
-    const handleScrollTop = () => {
-        let lastScrollTop = 0
-        let st = window.pageYOffset || document.documentElement.scrollTop;
-        (st > lastScrollTop) ? handleSetState("scrollClass", 1) : handleSetState("scrollClass", 0)
-        lastScrollTop = st <= 0 ? 0 : st;
-    }
-
     return (
         <ThemeContext.Provider
             value={{
                 items,
                 contents,
-                handleScrollBottom,
                 scrollClasses,
                 handleSetState,
-                handleScrollTop
+                carouselClasses,
+                imagesProjectsPage,
+                handleMultipleStateChanges
             }}>
             {children}
         </ThemeContext.Provider>
