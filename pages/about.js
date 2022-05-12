@@ -80,7 +80,7 @@ export default function About() {
                         <SmallPhotoWrapper>
                             <Image src={contents[0][items.contentsChosen][0]}
                                 layout="fill"
-                                alt="colourful-pattern"
+                                alt="colourful--∫pattern"
                             />
                         </SmallPhotoWrapper>
                         <p className=' lan:w-[28vw] lan:m-auto tab:my-4 w-[28vw] tab:w-[38vw]'>{contents[2][items.contentsChosen]}</p>
