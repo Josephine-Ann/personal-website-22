@@ -1,23 +1,9 @@
-const { join } = require('path');
-
-
-module.exports = {
-  content: [
-    "./pages/**/*.{jsx,js}",
-    "./components/**/*.{js,jsx}",
-  ],
-  theme: {
-    extend: {
-      screens: {
-        'xs': '280px',
-        'mid_mob': '360px',
-        'stan_mob': '390px',
-        'big_mob': '414px',
-        'tab': '700px',
-        'lan': '1000px',
-        'xl': '1280px'
-      },
-    },
+// ---------------------this
+const purgecss = [
+  "@fullhuman/postcss-purgecss",
+  {
+    content: ["./components/**/*.js", "./pages/**/*.js"],
+    defaultExtractor: (content) => content.match(/[\w-/:]+(?<!:)/g) || [],
   },
-  plugins: [],
-}
+];
+// ---------------------this
