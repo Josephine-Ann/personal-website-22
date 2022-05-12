@@ -54,6 +54,10 @@ export const ThemeProvider = ({ children }) => {
         Magic, Algorithm, Stethoscope, Metrics, LinkedIn
     ]
 
+    const imagesProjectsPageAlt = [
+        "magical objects", "nodes", "stethoscope", "chart and nodes", "linked in icon"
+    ]
+
     const carouselClasses = ["image-fade-in", "image-fade-in-2", "image-fade-in-3", "image-fade-in-4"]
 
     const [items, setItems] = useState({
@@ -87,6 +91,7 @@ export const ThemeProvider = ({ children }) => {
                 handleSetState,
                 carouselClasses,
                 imagesProjectsPage,
+                imagesProjectsPageAlt,
                 handleMultipleStateChanges
             }}>
             {children}
