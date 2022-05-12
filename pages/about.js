@@ -97,6 +97,7 @@ export default function About() {
                         <SmallPhotoWrapper>
                             <Image src={contents[0][items.contentsChosen][2]}
                                 layout="fill"
+                                alt="colourful-pattern"
                             />
                         </SmallPhotoWrapper>
                     </div>

@@ -24,9 +24,9 @@ const Navbar = ({ children }) => {
       <nav className="text-white flex fixed absolute top-0 w-full h-12 bg-transparent z-40 items-center justify-end">
         <FontAwesomeIcon onClick={() => setOpen(!open)} className="hide-large px-2 text-4xl z-50" icon={faNavicon} />
         <ul className={`bg-[#27292C] tab:bg-transparent absolute top-0 h-[100vh] w-[100vw] tab:h-[8vh] tab:flex-row flex flex-col tab:justify-end justify-around px-2 items-center ${open ? "block" : "hide-small"}`}>
-          <li className="tab:mx-3 list-none"><Link href="/"><FontAwesomeIcon className="px-2 text-4xl" icon={faHome} /></Link></li>
-          <li className="tab:mx-3 list-none"><Link href="/about"><FontAwesomeIcon className="px-2 text-4xl" icon={faContactCard} /></Link></li>
-          <li className="tab:mx-3 list-none"><Link href="/projects"><FontAwesomeIcon className="px-2 text-4xl" icon={faMagicWandSparkles} /></Link></li>
+          <li className="tab:mx-3 list-none"><Link href="/"><a><FontAwesomeIcon className="px-2 text-4xl" icon={faHome} /></a></Link></li>
+          <li className="tab:mx-3 list-none"><Link href="/about"><a><FontAwesomeIcon className="px-2 text-4xl" icon={faContactCard} /></a></Link></li>
+          <li className="tab:mx-3 list-none"><Link href="/projects"><a><FontAwesomeIcon className="px-2 text-4xl" icon={faMagicWandSparkles} /></a></Link></li>
         </ul>
       </nav>
       <div className={`${styles[transitionStage]}`}>
