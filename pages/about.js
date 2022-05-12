@@ -37,11 +37,11 @@ export default function About() {
                 <div className='h-[100vh]'>
                     <div className="text-center flex flex-col items-center justify-between lato stan_mob:text-2xl md:text-[46px] tab:text-4xl text-lg tab:h-[24vh] lan:h-[40vh] h-[27vh] md:h-[35vh] my-[30vh]">
                         <h1 className='max-w-[90vw]'>Hi, my name is Josephine.<FontAwesomeIcon className="mx-3 sm:text-[60px]" icon={faHandPeace} /></h1>
-                        <h2 className='max-w-[90vw]'>{`I'm`} looking for a job as a front-end developer.</h2>
+                        <h2 className='max-w-[90vw]'>I&apos;m looking for a job as a front-end developer.</h2>
                         <button onClick={() => {
                             window.scrollTo(0, window.innerHeight)
                         }} className="flex justify-center items-center w-[60%] sm:w-[40%] my-3 tab:text-4xl md:text-[46px] px-3 py-4 bg-[#27292C] text-white">
-                            {`Let's`} go!<FontAwesomeIcon className="ml-2" icon={faArrowAltCircleDown} />
+                            Let&apos;s go!<FontAwesomeIcon className="ml-2" icon={faArrowAltCircleDown} />
                         </button>
                     </div>
                 </div>

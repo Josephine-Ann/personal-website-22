@@ -28,10 +28,10 @@ export default function Projects() {
         <Navbar>
             <div className={`${scrollY >= window.innerHeight ? scrollClasses[1] : scrollClasses[2]}`}>
                 <div className='text-center w-full h-[100vh] flex flex-col justify-center items-center lato stan_mob:text-2xl md:text-[46px] tab:text-4xl text-lg'>
-                    <h1 className='tab:px-8 px-4'>Would you like to take a look at other things {`I've`} done?</h1>
+                    <h1 className='tab:px-8 px-4'>Would you like to take a look at other things I&apos;ve done?</h1>
                     <button onClick={() => {
                         window.scrollTo(0, window.innerHeight)
-                    }} className='flex justify-center items-center w-[55vw] tab:w-[35vw] lan:w-[25vw] my-5 tab:text-4xl md:text-[46px] px-3 py-4 bg-[#27292C] text-white'>{`Let's`} go!<FontAwesomeIcon className="ml-2" icon={faArrowAltCircleDown} /></button>
+                    }} className='flex justify-center items-center w-[55vw] tab:w-[35vw] lan:w-[25vw] my-5 tab:text-4xl md:text-[46px] px-3 py-4 bg-[#27292C] text-white'>Let&apos;s go!<FontAwesomeIcon className="ml-2" icon={faArrowAltCircleDown} /></button>
                 </div>
                 <div className='items-center w-full flex flex-col big_mob:flex-row h-[100vh] min-h-fit'>
                     <PhotoWrapperProjectIcons>
