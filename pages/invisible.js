@@ -5,7 +5,7 @@ import Navbar from "../Components/Navbar";
 export default function Invisible() {
     return (
         <Navbar>
-            <div className="tab:h-[420px] tab:w-[460px] tab:mx-3">
+            <div className="fixed tab:h-[420px] tab:w-[460px] tab:mx-3">
                 <div className="tab:h-[10px] tab:justify-end tab:bg-transparent tab:flex-row">
                     <h1 className="tab:text-[68px]">Hello</h1>
                 </div>
@@ -13,10 +13,10 @@ export default function Invisible() {
                 </div>
                 <div className="xs:h-[210px]">
                     <div className="xs:h-[6px]">
-                        <p className="tab:text-[68px]">Heyyyy</p>
+                        <p className="tab:text-[68px] top-0 z-20">Heyyyy</p>
                     </div>
                 </div>
-                <div className="xs:w-[230px]">
+                <div className="xs:w-[230px] top-[160px] z-20">
 
                 </div>
                 <div className="xs:w-[210px]">
