@@ -6,16 +6,16 @@ export default function Invisible() {
     return (
         <Navbar>
             <div className="fixed tab:h-[420px] tab:w-[460px] tab:mx-3">
-                <div className="tab:h-[10px] tab:justify-end tab:bg-transparent tab:flex-row">
+                <div className="bg-[#f57c76] tab:flex tab:h-[10px] tab:justify-end tab:bg-transparent tab:flex-row">
                     <h1 className="tab:text-[68px]">Hello</h1>
                 </div>
                 <div className="tab:h-[8vh] tab:w-[400px]">
                 </div>
                 <div className="xs:h-[210px] h-[160px] h-12 w-[100vw]">
                     <div className="xs:h-[6px]">
-                        <p className="tab:text-[68px] top-0 z-20">Heyyyy</p>
+                        <p className="flex justify-end bg-transparent tab:text-[68px] top-0 z-20">Heyyyy</p>
                         <ul>
-                            <li className="list-none"></li>
+                            <li className="text-4xl list-none"></li>
                         </ul>
                     </div>
                 </div>
