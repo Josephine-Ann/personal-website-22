@@ -45,16 +45,16 @@ export default function Projects() {
                         <ul className='tab:px-4'>
                             <li className={`${items.imageProjectsChoice === 1 ? "text-[#f57c76]" : ""}`} onMouseOut={() => handleSetState("imageProjectsChoice", 0)} onMouseOver={() => {
                                 handleSetState("imageProjectsChoice", 1)
-                            }}>Algorithm Repo on Github</li>
+                            }}><a href='https://github.com/Josephine-Ann/Algorithms'>Algorithm Repo on Github</a></li>
                             <li className={`${items.imageProjectsChoice === 2 ? "text-[#f57c76]" : ""}`} onMouseOut={() => handleSetState("imageProjectsChoice", 0)} onMouseOver={() => {
                                 handleSetState("imageProjectsChoice", 2)
-                            }}>Patient Triage Application</li>
+                            }}><a href="https://card-triage-next.vercel.app/">Patient Triage Application</a></li>
                             <li className={`${items.imageProjectsChoice === 3 ? "text-[#f57c76]" : ""}`} onMouseOut={() => handleSetState("imageProjectsChoice", 0)} onMouseOver={() => {
                                 handleSetState("imageProjectsChoice", 3)
-                            }}>Metrics Application</li>
+                            }}><a href='https://metrics-next.vercel.app/'>Metrics Application</a></li>
                             <li className={`${items.imageProjectsChoice === 4 ? "text-[#f57c76]" : ""}`} onMouseOut={() => handleSetState("imageProjectsChoice", 0)} onMouseOver={() => {
                                 handleSetState("imageProjectsChoice", 4)
-                            }}>LinkedIn</li>
+                            }}><a href="https://www.linkedin.com/in/josephine-geoghegan-920699b5/">LinkedIn</a></li>
                         </ul>
                     </div>
                 </div>
