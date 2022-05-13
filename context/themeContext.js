@@ -11,6 +11,10 @@ import BackgroundNine from "../styles/images/background-9.jpg"
 import BackgroundTen from "../styles/images/background-10.jpg"
 import BackgroundEleven from "../styles/images/background-11.jpg"
 import BackgroundTwelve from "../styles/images/background-12.jpg"
+import BackgroundThirteen from "../styles/images/react.svg"
+import BackgroundFourteen from "../styles/images/github.svg"
+import BackgroundFifteen from "../styles/images/js.svg"
+import BackgroundSixteen from "../styles/images/tailwind.svg"
 import Algorithm from "../styles/images/algorithm.svg"
 import Metrics from "../styles/images/metrics.svg"
 import LinkedIn from "../styles/images/linked_in.svg"
@@ -36,9 +40,10 @@ export const ThemeProvider = ({ children }) => {
         [
             [BackgroundOne, BackgroundTwo, BackgroundThree, BackgroundFour],
             [BackgroundFive, BackgroundSix, BackgroundSeven, BackgroundEight],
-            [BackgroundNine, BackgroundTen, BackgroundEleven, BackgroundTwelve]
+            [BackgroundNine, BackgroundTen, BackgroundEleven, BackgroundTwelve],
+            [BackgroundThirteen, BackgroundFourteen, BackgroundFifteen, BackgroundSixteen]
         ],
-        ["Background", "Creativity", "Puzzles"],
+        ["Background", "Creativity", "Puzzles", "Skills"],
         [
             "I’m transitioning from teaching English as a foreign language.  Teaching is a gift. It has helped me learn so much about how to engage with other people.",
             "I studied fine art and later I decided to study illustration abroad in Barcelona, which meant finding a way to support myself. Although teaching began as something I wasn’t particularly passionate about, that soon changed. I realised how much creativity, organisation and humility it required, and improving as a teacher meant improving upon my creativity. ",

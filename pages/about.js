@@ -3,7 +3,7 @@ import React, { useState, useEffect, useContext } from "react"
 import Navbar from "../Components/Navbar";
 import landscapeAbout from "../styles/images/landscapeAbout.jpg"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHandPeace, faArrowAltCircleDown, faTimeline, faPalette, faPuzzlePiece, faChevronDown } from '@fortawesome/free-solid-svg-icons'
+import { faHandPeace, faPersonChalkboard, faArrowAltCircleDown, faTimeline, faPalette, faPuzzlePiece, faChevronDown } from '@fortawesome/free-solid-svg-icons'
 import { useThemes } from '../context/themeContext';
 import useScrollPosition from '@react-hook/window-scroll'
 import { useMouseWheel } from 'react-use';
@@ -59,6 +59,10 @@ export default function About() {
                             handleSetState('contentsChosen', 2)
                             window.scrollTo(0, ((window.innerHeight) * 2));
                         }}><FontAwesomeIcon className="mr-4 sm:text-[30px]" icon={faPuzzlePiece} />Puzzles I Enjoy</li>
+                        <li className="cursor-pointer" onClick={() => {
+                            handleSetState('contentsChosen', 3)
+                            window.scrollTo(0, ((window.innerHeight) * 2));
+                        }}><FontAwesomeIcon className="mr-4 sm:text-[30px]" icon={faPersonChalkboard} />Skills</li>
                     </ul>
                     <PhotoWrapper>
                         <Image src={landscapeAbout}
