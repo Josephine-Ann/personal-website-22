@@ -7,7 +7,7 @@ export default function Invisible() {
         <Navbar>
             <div className="tab:h-[420px] tab:w-[460px] tab:mx-3">
                 <div className="tab:h-[10px] tab:justify-end tab:bg-transparent tab:flex-row">
-                    <h1 className="text-[68px]">Hello</h1>
+                    <h1 className="tab:text-[68px]">Hello</h1>
                 </div>
                 <div className="tab:h-[8vh] tab:w-[400px]">
 
