@@ -80,7 +80,7 @@ export default function About() {
                         <SmallPhotoWrapper>
                             <Image src={contents[0][items.contentsChosen][0]}
                                 layout="fill"
-                                alt="colourful--∫pattern"
+                                alt="colourful--pattern"
                             />
                         </SmallPhotoWrapper>
                         <p className=' lan:w-[28vw] lan:m-auto tab:my-4 w-[28vw] tab:w-[38vw]'>{contents[2][items.contentsChosen]}</p>
@@ -101,7 +101,7 @@ export default function About() {
                             />
                         </SmallPhotoWrapper>
                     </div>
-                    <div className={`${carouselClasses[items.contentsChosen]} hidden mb-[10vh] tab:text-[28px] sm:flex flex-col justify-between px-3 pt-4 tab:w-[40vw] lg:w-[25vw] lg:h-[550px] text-[25px] tab:text-[20px] lan:text-[15px]`}>
+                    <div className={`${carouselClasses[items.contentsChosen]} hidden mb-[10vh] tab:text-[28px] sm:flex flex-col justify-between px-3 pt-4 tab:w-[40vw] lg:w-[25vw] lg:h-[550px] text-[25px] tab:text-[28px] lan:text-[15px]`}>
                         <p className=' lan:w-[28vw] tab:w-[38vw] tab:my-4 lan:mx-auto w-[28vw] lan:text-[20px]'>{contents[3][items.contentsChosen]}</p>
                         <SmallPhotoWrapper>
                             <Image src={contents[0][items.contentsChosen][3]}
