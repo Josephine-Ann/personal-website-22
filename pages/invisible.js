@@ -11,9 +11,12 @@ export default function Invisible() {
                 </div>
                 <div className="tab:h-[8vh] tab:w-[400px]">
                 </div>
-                <div className="xs:h-[210px]">
+                <div className="xs:h-[210px] h-[160px] h-12 w-[100vw]">
                     <div className="xs:h-[6px]">
                         <p className="tab:text-[68px] top-0 z-20">Heyyyy</p>
+                        <ul>
+                            <li className="list-none"></li>
+                        </ul>
                     </div>
                 </div>
                 <div className="xs:w-[230px] top-[160px] z-20">
