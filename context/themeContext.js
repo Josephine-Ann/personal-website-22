@@ -42,12 +42,16 @@ export const ThemeProvider = ({ children }) => {
         [
             "I’m transitioning from teaching English as a foreign language.  Teaching is a gift. It has helped me learn so much about how to engage with other people.",
             "I studied fine art and later I decided to study illustration abroad in Barcelona, which meant finding a way to support myself. Although teaching began as something I wasn’t particularly passionate about, that soon changed. I realised how much creativity, organisation and humility it required, and improving as a teacher meant improving upon my creativity. ",
-            "I am a very socially driven person, and so I have tried to find mentors and learn about programming through their advice. I know that algorithm exams are the bane of their lives, and many resent having to do such an exam without ever finding a practical application for these skills in their job."
+            "I am a very socially driven person, and so I have tried to find mentors and learn about programming through their advice. I know that algorithm exams are the bane of their lives, and many resent having to do such an exam without ever finding a practical application for these skills in their job.",
+            "I did a bootcamp related to Ruby on Rails, but I ultimately realised that I preferred working with JavaScript and React. Initially I was working with Create-React-App, but eventually I began a mentorship program and consequently I have moved further and further towards Next JS. I was lucky enough to become an intern at Miga Labs for a month, where I got to learn a lot more about Git. I love styling my HTML with Tailwind CSS. "
+
         ],
         [
             "I began learning about web development because I was obsessed with e-learning platforms. I am beyond excited to learn more about how I can use it to communicate new ideas.",
             "I had been educated to think that creativity was done for other creatives, and I soon realised that I prefer to use creativity to feel a sense of belonging and engagement in society at large. I have learnt how to engage with other people, I have learnt how to observe other people and carry out iterative processes, and I have learnt how incredibly lucky I am to have been able to study lateral thinking.",
-            "I knew that algorithms were important to the job acquisition process, and I wasn’t prepared to take a hard stance on the whole thing. That’s why you can find a Github repo of my best attempts at solving algorithms here. I actually quite enjoyed them, especially after doing Colt Steele’s course on JS algorithms. "]
+            "I knew that algorithms were important to the job acquisition process, and I wasn’t prepared to take a hard stance on the whole thing. That’s why you can find a Github repo of my best attempts at solving algorithms here. I actually quite enjoyed them, especially after doing Colt Steele’s course on JS algorithms. ",
+            "I am originally from Ireland, so English is my first language. However, I have been living abroad in Barcelona since late 2015, and I have a full professional capacity to work in Spanish. In terms of my soft skills, I am lucky to have come from a background in which I was encouraged to develop my communication skills and lateral thinking. In recent years, I have made a point to become more consistent and assertive. I have also learnt about negotiating."
+        ]
     ]
 
     const imagesProjectsPage = [

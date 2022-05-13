@@ -71,7 +71,7 @@ export default function About() {
                     <h2 className='sm:mb-4 lg:text-[46px] text-[30px] tab:text-[40px]'>{contents[1][items.contentsChosen]}</h2>
                     <button onClick={() => {
                         let newVal;
-                        (items.contentsChosen + 1) < 3 ? newVal = items.contentsChosen + 1 : newVal = 0
+                        (items.contentsChosen + 1) < 4 ? newVal = items.contentsChosen + 1 : newVal = 0
                         handleSetState('contentsChosen', newVal)
                     }}><FontAwesomeIcon className="text-[#f57c76] sm:mr-4 text-[30px]" icon={faChevronDown} /></button>
                 </div>

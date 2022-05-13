@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Head from 'next/head';
 import portraitMainPage from "../styles/images/portraitMainPage.jpg"
 import landscapeMainPage from "../styles/images/landscapeMainPage.jpg"
 import Navbar from "../Components/Navbar.js";
@@ -11,6 +12,9 @@ import React, { useState, useEffect, useContext } from "react"
 export default function Home() {
   return (
     <Navbar>
+      <Head>
+        <link rel="shortcut icon" href="/favicon.png" />
+      </Head>
       <PhotoWrapper>
         <Image src={portraitMainPage}
           layout="fill"
