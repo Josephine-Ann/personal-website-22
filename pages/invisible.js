@@ -11,7 +11,7 @@ export default function Invisible() {
                 </div>
                 <div className="tab:h-[8vh] tab:w-[400px]">
                 </div>
-                <div className="xs:h-[210px] h-[160px] h-12 w-[100vw]">
+                <div className="xs:h-[210px] h-[160px] h-12 w-[100vw] z-40">
                     <div className="xs:h-[6px]">
                         <p className="flex justify-end bg-transparent tab:text-[68px] top-0 z-20">Heyyyy</p>
                         <ul>
