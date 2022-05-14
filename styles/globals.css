@@ -40,13 +40,13 @@ a {
 
 .fade-colour-transition-down {
   animation-name: colour-fade-down;
-  animation-duration: 1.2s;
+  animation-duration: 0.5s;
   animation-fill-mode: forwards;
 }
 
 .fade-colour-transition-up {
   animation-name: colour-fade-up;
-  animation-duration: 1.2s;
+  animation-duration: 0.5s;
   animation-fill-mode: forwards;
 }
 
