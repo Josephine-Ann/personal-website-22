@@ -42,12 +42,17 @@ a {
   animation-name: colour-fade-down;
   animation-duration: 0.5s;
   animation-fill-mode: forwards;
+  backface-visibility: hidden;
+  background-color: #f57c76;
 }
 
 .fade-colour-transition-up {
   animation-name: colour-fade-up;
   animation-duration: 0.5s;
   animation-fill-mode: forwards;
+  backface-visibility: hidden;
+  background-color: #282122;
+
 }
 
 .image-larger-down {
