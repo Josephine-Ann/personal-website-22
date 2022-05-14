@@ -12,6 +12,7 @@ export default function Home() {
   return (
     <Navbar>
       <Head>
+        <title>Josephine Geoghegan</title>
         <link rel="shortcut icon" href="/favicon.png" />
       </Head>
       <PhotoWrapper>
