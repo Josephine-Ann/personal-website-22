@@ -42,3 +42,40 @@ export default function Invisible() {
 }
 
 
+
+{/* <div id="second-section" className="text-white lato w-full min-h-[80vh] flex justify-around">
+<div className={`${carouselClasses[props.slide]} hidden mb-[10vh] sm:flex flex-col justify-between px-3  pt-4  tab:w-[40vw] lg:w-[25vw] lg:h-[550px] text-[25px] tab:text-[28px] lan:text-[20px]`}>
+    <SmallPhotoWrapper>
+        <Image src={contents[0][props.slide][0]}
+            layout="fill"
+            alt="colourful--pattern"
+        />
+    </SmallPhotoWrapper>
+    <p className='mt-8 tab:mb-4 lan:w-[28vw] lan:mx-auto w-[28vw] tab:w-[38vw]'>{contents[2][props.slide]}</p>
+</div>
+<div className={`${carouselClasses[props.slide]} mb-[10vh] lato flex tab:hidden xl-flex flex-col justify-between px-3 pt-4 w-[90vw] tab:text-[28px] tab:w-[40vw] lg:w-[25vw] lg:h-[550px] `}>
+    <SmallPhotoWrapper>
+        <Image src={contents[0][props.slide][1]}
+            layout="fill"
+            alt="colourful-pattern"
+        />
+    </SmallPhotoWrapper>
+    <p className='sm:hidden'>{contents[2][props.slide]}</p>
+    <p className='sm:hidden'>{contents[3][props.slide]}</p>
+    <SmallPhotoWrapper>
+        <Image src={contents[0][props.slide][2]}
+            layout="fill"
+            alt="colourful-pattern"
+        />
+    </SmallPhotoWrapper>
+</div>
+<div className={`${carouselClasses[props.slide]}  my-3  hidden mb-[10vh] tab:text-[28px] sm:flex flex-col justify-between px-3 pt-4 tab:w-[40vw] lg:w-[25vw] lg:h-[550px] text-[25px] tab:text-[28px] lan:text-[15px]`}>
+    <p className=' mb-8 lan:w-[28vw] tab:w-[38vw] tab:my-4 lan:mx-auto w-[28vw] lan:text-[20px]'>{contents[3][props.slide]}</p>
+    <SmallPhotoWrapper>
+        <Image src={contents[0][props.slide][3]}
+            layout="fill"
+            alt="colourful-pattern"
+        />
+    </SmallPhotoWrapper>
+</div>
+</div> */}

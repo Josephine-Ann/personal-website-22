@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import React, { useState, useEffect, useContext } from "react"
+import Head from 'next/head';
 import Navbar from "../Components/Navbar";
 import landscapeAbout from "../styles/images/landscapeAbout.jpg"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -33,6 +34,10 @@ export default function About() {
 
     return (
         <Navbar>
+            <Head>
+                <title>Josephine Geoghegan</title>
+                <link rel="shortcut icon" href="/favicon.png" />
+            </Head>
             <div className={`${scrollY > 500 ? scrollClasses[1] : scrollClasses[2]} flex items-center flex-col snap-section`}>
                 <div className='h-[100vh]'>
                     <div className="text-center flex flex-col items-center justify-between lato stan_mob:text-2xl md:text-[46px] tab:text-4xl text-lg tab:h-[24vh] lan:h-[40vh] h-[27vh] md:h-[35vh] my-[30vh]">
@@ -87,7 +92,7 @@ export default function About() {
                                 alt="colourful--pattern"
                             />
                         </SmallPhotoWrapper>
-                        <p className='mt-8 tab:mb-4 lan:w-[28vw] lan:mx-auto w-[28vw] tab:w-[38vw]'>{contents[2][items.contentsChosen]}</p>
+                        <p className='mt-8 tab:mb-4 lan:w-[28vw] lan:mx-auto tab:my-4 w-[28vw] tab:w-[38vw]'>{contents[2][items.contentsChosen]}</p>
                     </div>
                     <div className={`${carouselClasses[items.contentsChosen]} mb-[10vh] lato flex tab:hidden xl-flex flex-col justify-between px-3 pt-4 w-[90vw] tab:text-[28px] tab:w-[40vw] lg:w-[25vw] lg:h-[550px] `}>
                         <SmallPhotoWrapper>
@@ -116,7 +121,7 @@ export default function About() {
                     </div>
                 </div>
             </div>
-        </Navbar >
+        </Navbar>
     )
 }
 

@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Head from 'next/head';
 import React, { useState, useEffect, useContext } from "react"
 import Navbar from "../Components/Navbar";
 import landscapeAbout from "../styles/images/landscapeAbout.jpg"
@@ -27,6 +28,10 @@ export default function Projects() {
 
     return (
         <Navbar>
+            <Head>
+                <title>Josephine Geoghegan</title>
+                <link rel="shortcut icon" href="/favicon.png" />
+            </Head>
             <div className={`${scrollY >= height ? scrollClasses[1] : scrollClasses[2]}`}>
                 <div className='text-center w-full h-[100vh] flex flex-col justify-center items-center lato stan_mob:text-2xl md:text-[46px] tab:text-4xl text-lg'>
                     <h1 className='tab:px-8 px-4'>Would you like to take a look at other things I&apos;ve done?</h1>
