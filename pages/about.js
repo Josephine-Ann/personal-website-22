@@ -8,6 +8,7 @@ import { faHandPeace, faPersonChalkboard, faArrowAltCircleDown, faTimeline, faPa
 import { useThemes } from '../context/themeContext';
 import useScrollPosition from '@react-hook/window-scroll'
 import { useMouseWheel } from 'react-use';
+import Carousel from '../Components/Carousel';
 
 export default function About() {
     const {
@@ -23,10 +24,11 @@ export default function About() {
     let mouseWheel = useMouseWheel()
 
     const SmallPhotoWrapper = ({ children }) => {
-        let cadena = children.props.src.src
-        let doubleDigits = cadena.substring(20, 33)
-        cadena = cadena.substring(20, 32)
-        return <div className={`relative pt-[50%] w-[80vw] lan:w-[28vw] tab:w-[38vw] sm:w-[28vw] lan:mx-auto ${cadena} ${doubleDigits} ${cadena === "background-3" || cadena === "background-7" || doubleDigits === "background-11" ? "hidden sm:block" : ""} ${items.changeInMotion ? "image-fade-in" : ""}`}>{children}</div>;
+        // let cadena = children.props.src.src
+        // let doubleDigits = cadena.substring(20, 33)
+        // cadena = cadena.substring(20, 32)
+        // ${cadena} ${doubleDigits} ${cadena === "background-3" || cadena === "background-7" || doubleDigits === "background-11" ? "hidden sm:block" : ""} 
+        return <div className={`relative pt-[50%] w-[80vw] lan:w-[28vw] tab:w-[38vw] sm:w-[28vw] lan:mx-auto ${items.changeInMotion ? "image-fade-in" : ""}`}>{children}</div>;
     }
     const PhotoWrapper = ({ children }) => {
         return <div className={`border-2 relative pt-[50%] ${items.photo ? "image-larger-down m-auto" : "w-[80vw] h-[40vh] lg:h-[80vh] m-auto"}`}>{children}</div>;
@@ -84,45 +86,97 @@ export default function About() {
                         handleSetState('contentsChosen', newVal)
                     }}><FontAwesomeIcon className="text-[#f57c76] sm:mr-4 text-[30px]" icon={faChevronDown} /></button>
                 </div>
-                <div id="second-section" className="text-white lato w-full min-h-[80vh] flex justify-around">
-                    <div className={`${carouselClasses[items.contentsChosen]} hidden mb-[10vh] sm:flex flex-col justify-between px-3  pt-4  tab:w-[40vw] lg:w-[25vw] lg:h-[550px] text-[25px] tab:text-[28px] lan:text-[20px]`}>
-                        <SmallPhotoWrapper>
-                            <Image src={contents[0][items.contentsChosen][0]}
-                                layout="fill"
-                                alt="colourful--pattern"
-                            />
-                        </SmallPhotoWrapper>
-                        <p className='mt-8 tab:mb-4 lan:w-[28vw] lan:mx-auto tab:my-4 w-[28vw] tab:w-[38vw]'>{contents[2][items.contentsChosen]}</p>
-                    </div>
-                    <div className={`${carouselClasses[items.contentsChosen]} mb-[10vh] lato flex tab:hidden xl-flex flex-col justify-between px-3 pt-4 w-[90vw] tab:text-[28px] tab:w-[40vw] lg:w-[25vw] lg:h-[550px] `}>
-                        <SmallPhotoWrapper>
-                            <Image src={contents[0][items.contentsChosen][1]}
-                                layout="fill"
-                                alt="colourful-pattern"
-                            />
-                        </SmallPhotoWrapper>
-                        <p className='sm:hidden'>{contents[2][items.contentsChosen]}</p>
-                        <p className='sm:hidden'>{contents[3][items.contentsChosen]}</p>
-                        <SmallPhotoWrapper>
-                            <Image src={contents[0][items.contentsChosen][2]}
-                                layout="fill"
-                                alt="colourful-pattern"
-                            />
-                        </SmallPhotoWrapper>
-                    </div>
-                    <div className={`${carouselClasses[items.contentsChosen]}  my-3  hidden mb-[10vh] tab:text-[28px] sm:flex flex-col justify-between px-3 pt-4 tab:w-[40vw] lg:w-[25vw] lg:h-[550px] text-[25px] tab:text-[28px] lan:text-[15px]`}>
-                        <p className=' mb-8 lan:w-[28vw] tab:w-[38vw] tab:my-4 lan:mx-auto w-[28vw] lan:text-[20px]'>{contents[3][items.contentsChosen]}</p>
-                        <SmallPhotoWrapper>
-                            <Image src={contents[0][items.contentsChosen][3]}
-                                layout="fill"
-                                alt="colourful-pattern"
-                            />
-                        </SmallPhotoWrapper>
-                    </div>
-                </div>
+                <Carousel
+                    num={0}
+                    hidden={items.contentsChosen}
+                    firstColumn={carouselClasses[0]}
+                    secondColumn={carouselClasses[0]}
+                    thirdColumn={carouselClasses[0]}
+                    firstPhoto={contents[0][0][0]}
+                    secondPhoto={contents[0][0][1]}
+                    thirdPhoto={contents[0][0][2]}
+                    fourthPhoto={contents[0][0][3]}
+                    firstParagraph={contents[2][0]}
+                    secondParagraph={contents[3][0]}
+                />
+                <Carousel
+                    num={1}
+                    hidden={items.contentsChosen}
+                    firstColumn={carouselClasses[1]}
+                    secondColumn={carouselClasses[1]}
+                    thirdColumn={carouselClasses[1]}
+                    firstPhoto={contents[0][1][0]}
+                    secondPhoto={contents[0][1][1]}
+                    thirdPhoto={contents[0][1][2]}
+                    fourthPhoto={contents[0][1][3]}
+                    firstParagraph={contents[2][1]}
+                    secondParagraph={contents[3][1]}
+                />
+                <Carousel
+                    num={2}
+                    hidden={items.contentsChosen}
+                    firstColumn={carouselClasses[2]}
+                    secondColumn={carouselClasses[2]}
+                    thirdColumn={carouselClasses[2]}
+                    firstPhoto={contents[0][2][0]}
+                    secondPhoto={contents[0][2][1]}
+                    thirdPhoto={contents[0][2][2]}
+                    fourthPhoto={contents[0][2][3]}
+                    firstParagraph={contents[2][2]}
+                    secondParagraph={contents[3][2]}
+                />
+                <Carousel
+                    num={3}
+                    hidden={items.contentsChosen}
+                    firstColumn={carouselClasses[3]}
+                    secondColumn={carouselClasses[3]}
+                    thirdColumn={carouselClasses[3]}
+                    firstPhoto={contents[0][3][0]}
+                    secondPhoto={contents[0][3][1]}
+                    thirdPhoto={contents[0][3][2]}
+                    fourthPhoto={contents[0][3][3]}
+                    firstParagraph={contents[2][3]}
+                    secondParagraph={contents[3][3]}
+                />
             </div>
         </Navbar>
     )
 }
 
+{/* <div id="second-section" className="text-white lato w-full min-h-[80vh] flex justify-around">
+<div className={`${carouselClasses[items.contentsChosen]} hidden mb-[10vh] sm:flex flex-col justify-between px-3  pt-4  tab:w-[40vw] lg:w-[25vw] lg:h-[550px] text-[25px] tab:text-[28px] lan:text-[20px]`}>
+    <SmallPhotoWrapper>
+        <Image src={contents[0][items.contentsChosen][0]}
+            layout="fill"
+            alt="colourful--pattern"
+        />
+    </SmallPhotoWrapper>
+    <p className='mt-8 tab:mb-4 lan:w-[28vw] lan:mx-auto tab:my-4 w-[28vw] tab:w-[38vw]'>{contents[2][items.contentsChosen]}</p>
+</div>
+<div className={`${carouselClasses[items.contentsChosen]} mb-[10vh] lato flex tab:hidden xl-flex flex-col justify-between px-3 pt-4 w-[90vw] tab:text-[28px] tab:w-[40vw] lg:w-[25vw] lg:h-[550px] `}>
+    <SmallPhotoWrapper>
+        <Image src={contents[0][items.contentsChosen][1]}
+            layout="fill"
+            alt="colourful-pattern"
+        />
+    </SmallPhotoWrapper>
+    <p className='sm:hidden my-8'>{contents[2][items.contentsChosen]}</p>
+    <p className='sm:hidden my-8'>{contents[3][items.contentsChosen]}</p>
+    <SmallPhotoWrapper>
+        <Image src={contents[0][items.contentsChosen][2]}
+            layout="fill"
+            alt="colourful-pattern"
+        />
+    </SmallPhotoWrapper>
+</div>
+<div className={`${carouselClasses[items.contentsChosen]}  my-3  hidden mb-[10vh] tab:text-[28px] sm:flex flex-col justify-between px-3 pt-4 tab:w-[40vw] lg:w-[25vw] lg:h-[550px] text-[25px] tab:text-[28px] lan:text-[15px]`}>
+    <p className=' mb-8 lan:w-[28vw] tab:w-[38vw] tab:my-4 lan:mx-auto w-[28vw] lan:text-[20px]'>{contents[3][items.contentsChosen]}</p>
+    <SmallPhotoWrapper>
+        <Image src={contents[0][items.contentsChosen][3]}
+            layout="fill"
+            alt="colourful-pattern"
+        />
+    </SmallPhotoWrapper>
+</div>
+</div> */}
 
