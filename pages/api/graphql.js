@@ -19,7 +19,6 @@ type Friend {
     name: String
     job: String
 }
-
 type Query {
     friends: [Friend]
 }
