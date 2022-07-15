@@ -26,6 +26,7 @@ export default function Carousel(props) {
                         <Image src={props.firstPhoto}
                             layout="fill"
                             alt="colourful--pattern"
+                            loading="eager"
                         />
                     </SmallPhotoWrapper>
                     <p className='mt-8 tab:mb-4 lan:w-[28vw] lan:mx-auto tab:my-4 w-[28vw] tab:w-[38vw]'>{props.firstParagraph}</p>
@@ -35,6 +36,7 @@ export default function Carousel(props) {
                         <Image src={props.secondPhoto}
                             layout="fill"
                             alt="colourful-pattern"
+                            loading="eager"
                         />
                     </SmallPhotoWrapper>
                     <p className='sm:hidden'>{props.firstParagraph}</p>
@@ -43,6 +45,7 @@ export default function Carousel(props) {
                         <Image src={props.thirdPhoto}
                             layout="fill"
                             alt="colourful-pattern"
+                            loading="eager"
                         />
                     </DisappearingPhotoWrapper>
                 </div>
@@ -52,6 +55,7 @@ export default function Carousel(props) {
                         <Image src={props.fourthPhoto}
                             layout="fill"
                             alt="colourful-pattern"
+                            loading="eager"
                         />
                     </SmallPhotoWrapper>
                 </div>
