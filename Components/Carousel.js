@@ -30,7 +30,7 @@ export default function Carousel(props) {
                     </SmallPhotoWrapper>
                     <p className='mt-8 tab:mb-4 lan:w-[28vw] lan:mx-auto tab:my-4 w-[28vw] tab:w-[38vw]'>{props.firstParagraph}</p>
                 </div>
-                <div className={`${props.secondColumn} mb-[10vh] lato flex tab:hidden xl-flex flex-col justify-between px-3 pt-4 w-[90vw] tab:text-[28px] tab:w-[40vw] lg:w-[25vw] lg:h-[550px] `}>
+                <div className={`${props.secondColumn}  mb-[10vh] lato flex tab:hidden xl-flex flex-col justify-between px-3 pt-4 w-[90vw] tab:text-[28px] tab:w-[40vw] lg:w-[25vw] lg:h-[550px] `}>
                     <SmallPhotoWrapper>
                         <Image src={props.secondPhoto}
                             layout="fill"
