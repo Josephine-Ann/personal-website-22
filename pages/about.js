@@ -24,10 +24,6 @@ export default function About() {
     let mouseWheel = useMouseWheel()
 
     const SmallPhotoWrapper = ({ children }) => {
-        // let cadena = children.props.src.src
-        // let doubleDigits = cadena.substring(20, 33)
-        // cadena = cadena.substring(20, 32)
-        // ${cadena} ${doubleDigits} ${cadena === "background-3" || cadena === "background-7" || doubleDigits === "background-11" ? "hidden sm:block" : ""} 
         return <div className={`relative pt-[50%] w-[80vw] lan:w-[28vw] tab:w-[38vw] sm:w-[28vw] lan:mx-auto ${items.changeInMotion ? "image-fade-in" : ""}`}>{children}</div>;
     }
     const PhotoWrapper = ({ children }) => {
@@ -92,10 +88,10 @@ export default function About() {
                     firstColumn={carouselClasses[0]}
                     secondColumn={carouselClasses[0]}
                     thirdColumn={carouselClasses[0]}
-                    firstPhoto={contents[0][0][0]}
-                    secondPhoto={contents[0][0][1]}
-                    thirdPhoto={contents[0][0][2]}
-                    fourthPhoto={contents[0][0][3]}
+                    firstPhoto={contents[0][0][0].src}
+                    secondPhoto={contents[0][0][1].src}
+                    thirdPhoto={contents[0][0][2].src}
+                    fourthPhoto={contents[0][0][3].src}
                     firstParagraph={contents[2][0]}
                     secondParagraph={contents[3][0]}
                 />
@@ -105,10 +101,10 @@ export default function About() {
                     firstColumn={carouselClasses[1]}
                     secondColumn={carouselClasses[1]}
                     thirdColumn={carouselClasses[1]}
-                    firstPhoto={contents[0][1][0]}
-                    secondPhoto={contents[0][1][1]}
-                    thirdPhoto={contents[0][1][2]}
-                    fourthPhoto={contents[0][1][3]}
+                    firstPhoto={contents[0][1][0].src}
+                    secondPhoto={contents[0][1][1].src}
+                    thirdPhoto={contents[0][1][2].src}
+                    fourthPhoto={contents[0][1][3].src}
                     firstParagraph={contents[2][1]}
                     secondParagraph={contents[3][1]}
                 />
@@ -118,10 +114,10 @@ export default function About() {
                     firstColumn={carouselClasses[2]}
                     secondColumn={carouselClasses[2]}
                     thirdColumn={carouselClasses[2]}
-                    firstPhoto={contents[0][2][0]}
-                    secondPhoto={contents[0][2][1]}
-                    thirdPhoto={contents[0][2][2]}
-                    fourthPhoto={contents[0][2][3]}
+                    firstPhoto={contents[0][2][0].src}
+                    secondPhoto={contents[0][2][1].src}
+                    thirdPhoto={contents[0][2][2].src}
+                    fourthPhoto={contents[0][2][3].src}
                     firstParagraph={contents[2][2]}
                     secondParagraph={contents[3][2]}
                 />
@@ -131,10 +127,10 @@ export default function About() {
                     firstColumn={carouselClasses[3]}
                     secondColumn={carouselClasses[3]}
                     thirdColumn={carouselClasses[3]}
-                    firstPhoto={contents[0][3][0]}
-                    secondPhoto={contents[0][3][1]}
-                    thirdPhoto={contents[0][3][2]}
-                    fourthPhoto={contents[0][3][3]}
+                    firstPhoto={contents[0][3][0].src}
+                    secondPhoto={contents[0][3][1].src}
+                    thirdPhoto={contents[0][3][2].src}
+                    fourthPhoto={contents[0][3][3].src}
                     firstParagraph={contents[2][3]}
                     secondParagraph={contents[3][3]}
                 />
