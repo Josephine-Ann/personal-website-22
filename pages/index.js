@@ -19,12 +19,14 @@ export default function Home() {
         <Image src={portraitMainPage}
           layout="fill"
           alt="office-space"
+          loading="eager"
         />
       </PhotoWrapper>
       <LandscapePhotoWrapper>
         <Image src={landscapeMainPage}
           layout="fill"
           alt="office-space"
+          loading="eager"
         />
       </LandscapePhotoWrapper>
       <Logo />
