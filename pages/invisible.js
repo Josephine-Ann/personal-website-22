@@ -5,7 +5,7 @@ import Navbar from "../Components/Navbar";
 export default function Invisible() {
     return (
         <Navbar>
-            <div className="fixed tab:h-[420px] tab:w-[460px] tab:mx-3">
+            <div className="px-2 fixed tab:h-[420px] tab:w-[460px] tab:mx-3">
                 <div className="bg-[#f57c76] tab:flex tab:h-[10px] tab:justify-end tab:bg-transparent tab:flex-row">
                     <h1 className="tab:text-[68px]">Hello</h1>
                 </div>
